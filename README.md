@@ -8,7 +8,15 @@ Requires python 3
 ```
 
 # Run
-*TBD*
+```shell
+. .venv/bin/activate
+export TG_BOT_TOKEN="Bot Token goes here"
+export TG_BOT_NAME="Bot Name goes here"
+python src/app.py
+```
 
 # Docker
-*TBD*
+```shell
+docker build -t ep17bot . && \
+docker run -e TG_BOT_TOKEN="token" ep17bot
+```

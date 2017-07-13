@@ -8,7 +8,6 @@ BOT_TOKEN = os.environ.get('TG_BOT_TOKEN')
 BOT_NAME = os.environ.get('TG_BOT_NAME')
 assert all([BOT_TOKEN, BOT_NAME])
 
-BOT_MENTION_NAME = '@{}'.format(BOT_NAME.lower())
 bot = aiotg.Bot(api_token=BOT_TOKEN, name=BOT_NAME)
 
 
