@@ -20,3 +20,9 @@ python src/app.py
 docker build -t ep17bot . && \
 docker run -e TG_BOT_TOKEN="token" ep17bot
 ```
+
+*OR*
+
+```shell
+docker run -e TG_BOT_TOKEN="token" vit1/telegram-hello-ep17-bot
+```
